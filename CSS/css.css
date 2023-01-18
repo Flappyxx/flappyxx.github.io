@@ -1,0 +1,177 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-image:url("../images/fond.jpg");
+	background-size:20% auto;
+}
+#page_globale{
+	margin:1%;
+}
+
+/* création de l'header */
+#entete {
+	border:5px solid orange;
+	border-radius: 5px;
+}
+
+header{
+	border:0px solid black;
+	border-bottom-width:1px;
+	background-color:lightgrey;
+	height:100%;
+}
+
+header div {
+	display:inline-block;
+	vertical-align: middle; 
+}
+
+#logo{
+	width:30%;
+}
+
+#logo img{
+	display:block
+	height:100%;
+	width:auto;
+}
+
+#titre_entete {
+	width: 68%;
+	text-align:center;
+}
+/* Personnalisation de la navbar */
+nav {
+	padding:0!important;
+}
+.navbar-nav {
+	width:100%;
+}
+.nav-item {
+	border:0px solid black;
+	border-left-width:1px;
+	width:25%;
+}
+
+#first_nav_item {
+	border-left-width:0px;
+}
+/* fin header */
+/* début de la partie section */
+section{
+	width:80%;
+	margin:3% auto 0;
+}
+
+#titre_section {
+	display:block;
+	background-color:#DDD;
+	box-shadow: 7px 7px 7px;
+	width:300px;
+	margin:0 auto;
+	padding: 1% 0;
+	border-radius:30px;
+}
+
+/* gestion de l'apparence des article */
+section h1,section h2{
+	text-align:center;
+	text-decoration:underline;
+}
+
+section h2 {
+	color: #999;
+}
+/* apparence des images */
+section img{
+	display:block;
+	margin:0 auto;
+	width:40%;
+	height:auto;
+}
+/* apparence des articles */
+section article{  
+	border:5px solid orange;
+	background-color:white;
+	border-radius: 5px;
+	width:90%;
+	font-size:1em;
+	margin:3% auto 0;
+}
+
+li{
+	margin-left:40px;
+}
+
+table,th,td{
+	border:1px solid black;
+}
+
+table{
+	margin:0 auto;
+	width:70%;	
+}
+
+th,td{
+	text-align:center;
+}
+/* normalisation des vidéos */
+iframe{
+	display:block;
+	margin:0 auto;
+	width:60%;
+	height:300px;
+}
+/* fin de section */
+/* début footer */
+footer{
+	border:1px solid black;	
+	background-color: #CCC;
+	width:70%;
+	margin:2% auto;
+}
+
+#formulaire{
+	width:90%;
+	margin:0 auto;
+}
+
+#formulaire h2 {
+	text-decoration:underline;
+}
+
+.form{
+	width:100%;
+}
+
+label{
+	width:10%;
+}
+/* fin footer */
+/* adaptation au format mobile */
+@media screen and (max-width:991px) {
+	#logo {
+		display:none;
+	}
+	#titre_entete {
+		width:100%;
+	}
+	.nav-item {
+		border:0px solid black;
+	}
+	#entete {
+		border:1px solid black;
+	}
+	label{
+		width:20%;
+	}
+	.dropdown-menu {
+		width:100% !important;
+	}
+	iframe{
+	height:180px;
+}
+}
